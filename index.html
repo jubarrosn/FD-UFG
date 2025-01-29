@@ -256,6 +256,7 @@ function generatePDF() {
     const flag = checkbox.checked ? "ESTAGIÁRIO(A)" : "SERVIDOR(A)";
 
     doc.setFontSize(14);
+    doc.setFont("helvetica", "bold");
     doc.text(`REGISTRO DE PONTO MENSAL DE ${flag} - ${mes}/${ano}`, 105, 35, null, null, "center");
 
 
