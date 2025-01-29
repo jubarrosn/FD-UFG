@@ -256,13 +256,13 @@ function generatePDF() {
     const flag = checkbox.checked ? "ESTAGIÁRIO(A)" : "SERVIDOR(A)";
 
     doc.setFontSize(14);
-    doc.text(`REGISTRO DE PONTO MENSAL DE ${flag} - ${mes}/${ano}`, 105, 25, null, null, "center");
+    doc.text(`REGISTRO DE PONTO MENSAL DE ${flag} - ${mes}/${ano}`, 105, 31, null, null, "center");
 
 
     // Informações principais com margens
     let yPosition = 40;
     const marginHeight = 8; // Altura das margens
-    const fieldWidth = 189; // Largura dos campos
+    const fieldWidth = 189; // Largura dos campo
     const textX = 12; // Posição horizontal do texto
     const rectX = 10; // Posição horizontal da borda
 
